@@ -1,4 +1,4 @@
-project(emuGLES2)
+project(emuGLES2 C)
 cmake_minimum_required(VERSION 2.8)
 aux_source_directory(. SRC_LIST)
 set(HEADER_FILES emuGLES2.h)
