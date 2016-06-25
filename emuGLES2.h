@@ -19,11 +19,24 @@
 #ifndef EMULATEDGLES2_H
 #define EMULATEDGLES2_H
 
-#include <stdint.h>
 
-typedef int32_t sint32;
-typedef uint32_t uint32;
+#ifndef WAEL_DEFINED_TYPES
+#define WAEL_DEFINED_TYPES
+#include <stdint.h>
+typedef uint8_t		uint8;
+typedef uint16_t	uint16;
+typedef uint32_t	uint32;
+typedef uint64_t	uint64;
+
+typedef int8_t		sint8;
+typedef int16_t		sint16;
+typedef int32_t		sint32;
+typedef int64_t		sint64;
+#endif
+
 typedef uint8_t	GLubyte;
+typedef uint32_t GLuint;
+typedef int32_t GLint;
 typedef unsigned char GLboolean;
 
 #if defined _WIN32 || defined __CYGWIN__
